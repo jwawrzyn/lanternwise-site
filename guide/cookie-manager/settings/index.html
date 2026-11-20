@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Settings and what they mean · Cookie Manager Guide · Lanternwise Labs</title>
+  <meta name="description" content="Every troop setting explained, with defaults and when to change them.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="/favicon.svg" alt="">Lanternwise Labs</a>
+      <nav><a href="/guide/">Guide</a><a href="/privacy/">Privacy</a><a href="/delete-account/">Delete account</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <p class="crumbs"><a href="/guide/cookie-manager/">Cookie Manager guide</a></p>
+      <h1>Settings and what they mean</h1>
+      <p class="meta">Every troop setting explained, with defaults and when to change them.</p>
+      <details class="guide-nav"><summary>All guide pages</summary><ol><li><a href="/guide/cookie-manager/getting-started/">Getting started</a></li><li><a href="/guide/cookie-manager/people/">Managers, scouts and families</a></li><li><a href="/guide/cookie-manager/season-and-cookies/">Season and cookie catalog</a></li><li><a href="/guide/cookie-manager/settings/" aria-current="page">Settings and what they mean</a></li><li><a href="/guide/cookie-manager/booths/">Scheduling and running booths</a></li><li><a href="/guide/cookie-manager/personal-booths/">Personal booth requests</a></li><li><a href="/guide/cookie-manager/cupboard/">Cupboard hours and cookie requests</a></li><li><a href="/guide/cookie-manager/inventory-and-transfers/">Inventory and transfers</a></li><li><a href="/guide/cookie-manager/orders/">Orders, deliveries and Digital Cookie</a></li><li><a href="/guide/cookie-manager/rewards/">Rewards and cookie credits</a></li><li><a href="/guide/cookie-manager/reports/">Reports and bank deposits</a></li><li><a href="/guide/cookie-manager/faq/">FAQ and glossary</a></li></ol></details>
+
+<p>Open <span class="ui">Settings &amp; Permissions</span> (dashboard &rarr; Troop Management). Settings are grouped into five collapsible sections. Each section has its own <span class="ui">Save</span> button, which stays grey until you change something, so saving one section never overwrites another.</p>
+
+<h2>1. Booth Sign-Up Rules</h2>
+<p>Controls how many troop booth shifts each scout can take, and when. The goal is fairness: you release shifts in <strong>rounds</strong> so every family gets a chance at the good spots before anyone takes them all.</p>
+<ul>
+  <li><span class="ui">Add Round</span> creates a round with an <strong>Opens</strong> date and time and a number of shifts. The first round is <em>Shifts each scout can sign up for</em>; later rounds are <em>Additional shifts</em> on top of the earlier ones (the screen shows the running total).</li>
+  <li><strong>Open to Everyone (No Shift Limit)</strong> is the date after which the limit disappears. It must come after your last round.</li>
+  <li>With no rounds and no date, there's <strong>no limit</strong> and sign-ups are open immediately.</li>
+</ul>
+<p>Example: Round 1 opens Friday for 2 shifts each, Round 2 opens the next Friday for 1 more (3 total), and everything opens to all the week after.</p>
+<div class="tip"><strong>What the rounds don't cover:</strong> personal booths, and troop booths that have their own sign-up date set in the booth form, sit outside the rounds. A manager can still assign a scout over the limit after confirming the warning.</div>
+
+<h2>2. Parent Visibility &amp; Personal Booths</h2>
+<table>
+  <tr><th>Setting</th><th>Default</th><th>What it does</th></tr>
+  <tr><td>Allow Parents to View Troop Cupboard</td><td>Off</td><td>Off: parents see only their own scout's cookies. On: families also get a read-only <em>Troop Cupboard Totals</em> card.</td></tr>
+  <tr><td>Allow Personal Driveway Booth Requests</td><td>On</td><td>Lets families request their own storefront or driveway booths. Turn it off if your troop doesn't run them. See <a href="/guide/cookie-manager/personal-booths/">Personal booth requests</a>.</td></tr>
+  <tr><td>Personal Booths Count as the Scout's Own Sales</td><td>Off</td><td>The default <em>sales mode</em> for new personal booths. Off: the booth reconciles its own cash and credits the scout with what sells when it's finished. On: boxes the scout brings stay on what her family owes and what sells counts as her own sales, with no booth cash or credit split, and cupboard cookies go to the scout first. Applies to new booths; you can change an individual booth before it has stock.</td></tr>
+  <tr><td>Let Families Give Cookies to Any Scout</td><td>Off</td><td>On: families can record a Scout ➔ Scout transfer to any scout in the troop. Off: they can only move boxes between their own scouts, and you record transfers between families.</td></tr>
+  <tr><td>Let Families Record Transfers</td><td>On</td><td>On: families can record returns to the troop (with cash or checks) and Scout ➔ Scout transfers from their phone. A return doesn't count toward stock or what the family owes until you confirm it on the Transfers screen. Off: only managers record these.</td></tr>
+</table>
+
+<h2>3. Transfer Receipts</h2>
+<p>How cookie and money hand-offs are proven. Every transfer is still emailed to the troop managers and the families involved.</p>
+<table>
+  <tr><th>Setting</th><th>Default</th><th>What it does</th></tr>
+  <tr><td>In-App Signatures</td><td>On</td><td>The giver and receiver both sign on the phone before a transfer saves.</td></tr>
+  <tr><td>Council Receipt Photo</td><td>Off</td><td>Take a photo of the council's paper receipt. It's stored with the transfer and attached to the emailed receipt. A transfer saved without one is flagged so you can add the photo later. Council generally wants the paper receipt in a dispute, so many troops turn this on.</td></tr>
+  <tr><td>Receipt IDs</td><td>Off</td><td>Adds a switch to transfers that gives them the next receipt number, like <code>T123-0001</code>. It's handy for transfers that don't come from council, like Troop ➔ Scout. Numbers restart each season.</td></tr>
+  <tr><td>Receipt ID Prefix / Start Numbering At</td><td>blank / 1</td><td>The letters before the number, and the first number to use. The screen shows an example. Because each phone reserves a batch of numbers while it has signal, IDs never repeat but can skip a few and may not be in exact time order.</td></tr>
+</table>
+<p>If signatures and photos are both off, transfers are recorded without either.</p>
+
+<h2>4. Booth Reconciliation</h2>
+<p>How troop booths are wrapped up: cookies checked out and returned, cash counted, and the digital total. These apply to <strong>troop booths</strong>; personal booths follow the transfer signature setting above. All four are off by default, meaning only a manager reconciles troop booths and no one signs.</p>
+<table>
+  <tr><th>Setting</th><th>What it does</th></tr>
+  <tr><td>Families Can Start Reconciliation</td><td>The family of a scout on a booth's shift can check cookies out and in and count the cash from their phone. They can't enter the digital total or finish the booth. You finalize it, and the booth can't be finished until you do.</td></tr>
+  <tr><td>Signature on Checkout</td><td>The family signs when cookies are checked out to a troop booth. When you do the checkout, you both sign; when a family does it, you countersign when you finalize.</td></tr>
+  <tr><td>Signature on Return</td><td>The same, for unsold cookies coming back.</td></tr>
+  <tr><td>Signature on Cash</td><td>The family signs for the cash they hand in; you sign when you finalize.</td></tr>
+</table>
+<p>Credit cards are processed through Digital Cookie, so credit card and digital are a single amount that you enter when you finalize.</p>
+
+<h2>5. Cookie Cupboard</h2>
+<table>
+  <tr><th>Setting</th><th>Default</th><th>What it does</th></tr>
+  <tr><td>Cookie Cupboard Address</td><td>blank</td><td>Where families pick up and return cookies. Families see it on their home screen with an <em>Open in Maps</em> button, even when scheduling is off.</td></tr>
+  <tr><td>Enable Cupboard Schedule Hours</td><td>Off</td><td>On: families pick a 15-minute time (one family per time) whenever they request or return cookies. You post the hours under <span class="ui">Set Cupboard Hours</span>. If no times are posted they can still send the request and you contact them.</td></tr>
+  <tr><td>Book or Cancel At Least This Far Ahead</td><td>Any time</td><td>Families can't book or cancel a time closer than this (choices go from any time to 48 hours). Past that, they contact you. You can always change a booking.</td></tr>
+</table>
+<p>See <a href="/guide/cookie-manager/cupboard/">Cupboard hours and cookie requests</a> for the whole flow.</p>
+
+      <div class="pager"><a href="/guide/cookie-manager/season-and-cookies/">&larr; Season and cookie catalog</a><a href="/guide/cookie-manager/booths/">Scheduling and running booths &rarr;</a></div>
+    </div>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      &copy; 2026 Lanternwise Labs &middot; <a href="mailto:support@lanternwise.app">support@lanternwise.app</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/delete-account/">Delete account</a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inventory and transfers · Cookie Manager Guide · Lanternwise Labs</title>
+  <meta name="description" content="How the cupboard and scout stock are tracked, and how to record every hand-off.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="/favicon.svg" alt="">Lanternwise Labs</a>
+      <nav><a href="/guide/">Guide</a><a href="/privacy/">Privacy</a><a href="/delete-account/">Delete account</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <p class="crumbs"><a href="/guide/cookie-manager/">Cookie Manager guide</a></p>
+      <h1>Inventory and transfers</h1>
+      <p class="meta">How the cupboard and scout stock are tracked, and how to record every hand-off.</p>
+      <details class="guide-nav"><summary>All guide pages</summary><ol><li><a href="/guide/cookie-manager/getting-started/">Getting started</a></li><li><a href="/guide/cookie-manager/people/">Managers, scouts and families</a></li><li><a href="/guide/cookie-manager/season-and-cookies/">Season and cookie catalog</a></li><li><a href="/guide/cookie-manager/settings/">Settings and what they mean</a></li><li><a href="/guide/cookie-manager/booths/">Scheduling and running booths</a></li><li><a href="/guide/cookie-manager/personal-booths/">Personal booth requests</a></li><li><a href="/guide/cookie-manager/cupboard/">Cupboard hours and cookie requests</a></li><li><a href="/guide/cookie-manager/inventory-and-transfers/" aria-current="page">Inventory and transfers</a></li><li><a href="/guide/cookie-manager/orders/">Orders, deliveries and Digital Cookie</a></li><li><a href="/guide/cookie-manager/rewards/">Rewards and cookie credits</a></li><li><a href="/guide/cookie-manager/reports/">Reports and bank deposits</a></li><li><a href="/guide/cookie-manager/faq/">FAQ and glossary</a></li></ol></details>
+
+<p>Every time cookies or money change hands, you record a <strong>transfer</strong>. The app does the stock math for you.</p>
+
+<h2>How stock is counted</h2>
+<ul>
+  <li><strong>Cupboard</strong> (what the troop is holding): received from council + received from other troops + returns from scouts &minus; given to scouts &minus; given to other troops &minus; boxes out at booths. It's calculated, never typed in. The app blocks a hand-off that would take the cupboard below zero.</li>
+  <li><strong>Responsible For</strong> (per scout): what the scout's family took, minus returns and boxes given away or sent to a booth. It's what the family owes money on.</li>
+  <li><strong>At Home</strong> (per scout): Responsible For minus boxes already delivered to customers.</li>
+  <li><strong>Out at Booth:</strong> boxes at the scout's open personal booth.</li>
+</ul>
+<p>The <span class="ui">Inventory Dashboard</span> shows the cupboard by cookie, plus a <strong>Cards</strong> view (one card per scout: money owed, a colour-coded bar, exact counts, and progress to the scout's box goal) and a <strong>Council table</strong> view (cookies across the top, scouts down the side). <em>Money owed</em> is the price of the boxes held minus the cash turned in and the card payments made online through Digital Cookie.</p>
+<p>The dashboard also warns when a scout has promised more for delivery than they hold (<em>"TM: promised 12, has 8 (short 4)"</em>).</p>
+
+<h2>Record a transfer</h2>
+<ol class="steps">
+  <li>Tap <span class="ui">Transfer</span> on the Inventory Dashboard (or open it from <span class="ui">Transfer History &amp; Receipts</span>).</li>
+  <li>Pick the <strong>route</strong> (below).</li>
+  <li>Pick the scout if the route involves one.</li>
+  <li>Enter <strong>Cases</strong> and <strong>Loose Boxes</strong> for each cookie, using +/&minus; or tapping the number to type it. If money is changing hands, enter the <strong>Cash Amount ($)</strong> and how it was paid.</li>
+  <li>Collect signatures (and the council receipt photo, if your Settings require it), then save.</li>
+</ol>
+
+<table>
+  <tr><th>Route</th><th>Use it when</th></tr>
+  <tr><td>Council ➔ Troop</td><td>Your council delivery arrives. Do this first, so the cupboard has stock to give out. A photo of the paper council receipt can be attached.</td></tr>
+  <tr><td>Troop ➔ Scout</td><td>Handing cookies to a family.</td></tr>
+  <tr><td>Scout ➔ Troop</td><td>A family returns cookies and/or turns in money.</td></tr>
+  <tr><td>Scout ➔ Scout</td><td>Moving boxes between scouts or families (see <em>Let Families Give Cookies to Any Scout</em> in Settings).</td></tr>
+  <tr><td>Troop ➔ Ext. Troop / Ext. Troop ➔ Troop</td><td>Swapping with another troop. Enter their troop number and contact name, phone, and email; the receipt is emailed to that contact.</td></tr>
+  <tr><td>Troop ➔ Hometown Heroes</td><td>Giving leftover cookies out to fulfill Hometown Heroes donations. It's a count; no signatures are needed.</td></tr>
+</table>
+<p>Donation varieties (HTH, GOC) also appear on Troop ➔ Scout, Scout ➔ Troop, and Scout ➔ Scout, as <em>boxes only</em>. They only change a scout's donation total; they never touch the cupboard or a scout's stock or money. On a Troop ➔ Scout or Scout ➔ Troop transfer, each donation line has an <span class="ui">Add to scout</span> / <span class="ui">Take from scout</span> choice.</p>
+
+<h2>Receipts and history</h2>
+<p>Every transfer produces a receipt, emailed to the troop managers and the families involved (and the other troop's contact, for swaps). Open a transfer from <span class="ui">Transfer History &amp; Receipts</span> to see it, add a missing receipt photo, or confirm a return a family recorded.</p>
+
+<div class="tip"><strong>Confirm family returns.</strong> If you allow families to record transfers, a return doesn't count toward stock or what the family owes until a manager confirms it on the Transfers screen.</div>
+
+<h2>Donations screen</h2>
+<p><span class="ui">Donations (HTH &amp; GOC)</span> shows donation totals, how many Hometown Heroes boxes are sold, fulfilled, and still owed, and online donations. You can also move boxes from one donation type to another, troop-wide or for a single scout.</p>
+
+      <div class="pager"><a href="/guide/cookie-manager/cupboard/">&larr; Cupboard hours and cookie requests</a><a href="/guide/cookie-manager/orders/">Orders, deliveries and Digital Cookie &rarr;</a></div>
+    </div>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      &copy; 2026 Lanternwise Labs &middot; <a href="mailto:support@lanternwise.app">support@lanternwise.app</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/delete-account/">Delete account</a>
+    </div>
+  </footer>
+</body>
+</html>

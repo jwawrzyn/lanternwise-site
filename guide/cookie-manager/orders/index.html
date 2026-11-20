@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orders, deliveries and Digital Cookie · Cookie Manager Guide · Lanternwise Labs</title>
+  <meta name="description" content="What a new customer order is, how deliveries work, and how to import Digital Cookie.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="/favicon.svg" alt="">Lanternwise Labs</a>
+      <nav><a href="/guide/">Guide</a><a href="/privacy/">Privacy</a><a href="/delete-account/">Delete account</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <p class="crumbs"><a href="/guide/cookie-manager/">Cookie Manager guide</a></p>
+      <h1>Orders, deliveries and Digital Cookie</h1>
+      <p class="meta">What a new customer order is, how deliveries work, and how to import Digital Cookie.</p>
+      <details class="guide-nav"><summary>All guide pages</summary><ol><li><a href="/guide/cookie-manager/getting-started/">Getting started</a></li><li><a href="/guide/cookie-manager/people/">Managers, scouts and families</a></li><li><a href="/guide/cookie-manager/season-and-cookies/">Season and cookie catalog</a></li><li><a href="/guide/cookie-manager/settings/">Settings and what they mean</a></li><li><a href="/guide/cookie-manager/booths/">Scheduling and running booths</a></li><li><a href="/guide/cookie-manager/personal-booths/">Personal booth requests</a></li><li><a href="/guide/cookie-manager/cupboard/">Cupboard hours and cookie requests</a></li><li><a href="/guide/cookie-manager/inventory-and-transfers/">Inventory and transfers</a></li><li><a href="/guide/cookie-manager/orders/" aria-current="page">Orders, deliveries and Digital Cookie</a></li><li><a href="/guide/cookie-manager/rewards/">Rewards and cookie credits</a></li><li><a href="/guide/cookie-manager/reports/">Reports and bank deposits</a></li><li><a href="/guide/cookie-manager/faq/">FAQ and glossary</a></li></ol></details>
+
+<h2>What is a "New Customer Order"?</h2>
+<p>A <strong>customer order</strong> is a record of cookies a scout has sold directly to a customer: a neighbour, a relative, a coworker. It records who bought, which cookies and how many, whether they've paid, and whether the cookies have been delivered yet. It's separate from booth sales and from Digital Cookie online orders.</p>
+<p>The <span class="ui">New Customer Order</span> button on the dashboard is for families to log sales (and for you to log sales for your own scout, or to fix an order). As a manager you'll mostly see these orders through the reports and the delivery stock checks.</p>
+
+<h3>Entering an order</h3>
+<ol class="steps">
+  <li><strong>Select Scout</strong> (families pick from their own scouts).</li>
+  <li><span class="ui">Select or Add Customer</span>. A customer has a name (required), phone, email, delivery address, and porch or drop-off notes. <span class="ui">Edit Details</span> on a customer changes it on all of their orders.</li>
+  <li><strong>Order Line Items:</strong> cases and boxes per cookie. Donation boxes (HTH, GOC) can be on an order too; there's nothing to deliver for those.</li>
+  <li><strong>Payment Details:</strong> <em>Payment Status</em> is Unpaid, Partially Paid, or Paid. <em>Payment Method</em> is Cash, Check (with a check number), or Electronic (Venmo, CashApp, Zelle, Square, Digital Cookie).</li>
+  <li>Add order or delivery notes and save. Orders can be saved offline.</li>
+</ol>
+<p>Made a mistake? Open the order from the delivery list and tap <span class="ui">Edit</span>. Editing needs a connection.</p>
+<div class="tip"><strong>Cash from customers.</strong> A customer's cash is kept by the family. It reaches you when the family turns money in on a Scout ➔ Troop transfer, and the scout's balance drops then.</div>
+
+<h2>Delivery Route Pipeline</h2>
+<p><span class="ui">Delivery Route Pipeline</span> lists orders by <strong>Needs Delivery</strong> and <strong>Delivered</strong>. Each pending order shows an <span class="ui">In Stock</span> badge, or <span class="ui">Short by N boxes</span> if the scout doesn't have enough at home. <span class="ui">Map Delivery Route in Google Maps</span> builds a route through the addresses, and marking an order delivered reduces the scout's <em>At Home</em> count. Deliveries stay <strong>per scout</strong>: a sibling's boxes must be moved with a Scout ➔ Scout transfer first.</p>
+
+<h2>Digital Cookie import</h2>
+<p>Digital Cookie is the Girl Scouts' online ordering platform. It collects card payments itself, and you bring those orders into the app with its CSV export so stock, money owed, and reward totals stay right.</p>
+<ol class="steps">
+  <li>On the dashboard tap <span class="ui">Digital Cookie Import</span>.</li>
+  <li>Pick the CSV you exported from Digital Cookie.</li>
+  <li>Check the <strong>Match this file</strong> panel. It opens by itself only when something needs your choice. Headings and wording change from year to year, so you tell the app which column is the order number, scout, date, type, payment, amount, and status; which catalog cookie each cookie column is; and what each order type, payment, and status in the file means. The choices are saved for your troop and applied to the next file.</li>
+  <li>Review the preview. Every order is checked; nothing is saved until you confirm.</li>
+  <li>Fix any unmatched scout names (pick them by hand or leave them out), then confirm.</li>
+</ol>
+
+<h3>What each order type does</h3>
+<table>
+  <tr><th>Type</th><th>Effect</th></tr>
+  <tr><td>Cookies In Hand (mobile)</td><td>Boxes leave the scout's <em>At Home</em> stock. A card payment counts as paid.</td></tr>
+  <tr><td>In-Person Delivery</td><td>Becomes a normal customer order (Needs Delivery, or Delivered if the file says so). A card payment counts as paid.</td></tr>
+  <tr><td>Shipped</td><td>Counts toward rewards (shown as <em>shipped</em>), with no stock or money change.</td></tr>
+  <tr><td>Donation</td><td>The boxes go to the scout's donation totals, under the donation cookie you pick.</td></tr>
+</table>
+<ul>
+  <li><strong>Safe to repeat.</strong> It keeps one row per Digital Cookie order number per season, so re-importing the same or a longer file only adds new orders.</li>
+  <li><strong>Cancelled, rejected, and refunded orders are skipped.</strong> Partly refunded orders and total mismatches get a warning.</li>
+  <li><strong>Troop-site orders (no scout named)</strong> usually came from a booth, so you assign them to a <strong>booth</strong> (or a scout). The app groups them by time and, when the file names the booth, by that name, pre-picks the matching booth, and lets you change any group. They don't touch any scout's stock, credit, or rewards, because the booth's own stock already covers them.</li>
+  <li><strong>Orders typed in by hand</strong> that match a file order (same scout, same customer name) are offered for merging. The Digital Cookie data wins. You can also tap <span class="ui">Merge with Digital Cookie</span> on an order later.</li>
+  <li><strong>Moving orders afterwards.</strong> The <em>Imported orders</em> list groups everything by who has it. Tick orders and move them to a scout, a booth, or back to unassigned.</li>
+</ul>
+
+      <div class="pager"><a href="/guide/cookie-manager/inventory-and-transfers/">&larr; Inventory and transfers</a><a href="/guide/cookie-manager/rewards/">Rewards and cookie credits &rarr;</a></div>
+    </div>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      &copy; 2026 Lanternwise Labs &middot; <a href="mailto:support@lanternwise.app">support@lanternwise.app</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/delete-account/">Delete account</a>
+    </div>
+  </footer>
+</body>
+</html>

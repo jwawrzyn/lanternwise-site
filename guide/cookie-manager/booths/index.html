@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scheduling and running booths · Cookie Manager Guide · Lanternwise Labs</title>
+  <meta name="description" content="Schedule troop booths, control sign-ups, and reconcile and finish each booth.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="/favicon.svg" alt="">Lanternwise Labs</a>
+      <nav><a href="/guide/">Guide</a><a href="/privacy/">Privacy</a><a href="/delete-account/">Delete account</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <p class="crumbs"><a href="/guide/cookie-manager/">Cookie Manager guide</a></p>
+      <h1>Scheduling and running booths</h1>
+      <p class="meta">Schedule troop booths, control sign-ups, and reconcile and finish each booth.</p>
+      <details class="guide-nav"><summary>All guide pages</summary><ol><li><a href="/guide/cookie-manager/getting-started/">Getting started</a></li><li><a href="/guide/cookie-manager/people/">Managers, scouts and families</a></li><li><a href="/guide/cookie-manager/season-and-cookies/">Season and cookie catalog</a></li><li><a href="/guide/cookie-manager/settings/">Settings and what they mean</a></li><li><a href="/guide/cookie-manager/booths/" aria-current="page">Scheduling and running booths</a></li><li><a href="/guide/cookie-manager/personal-booths/">Personal booth requests</a></li><li><a href="/guide/cookie-manager/cupboard/">Cupboard hours and cookie requests</a></li><li><a href="/guide/cookie-manager/inventory-and-transfers/">Inventory and transfers</a></li><li><a href="/guide/cookie-manager/orders/">Orders, deliveries and Digital Cookie</a></li><li><a href="/guide/cookie-manager/rewards/">Rewards and cookie credits</a></li><li><a href="/guide/cookie-manager/reports/">Reports and bank deposits</a></li><li><a href="/guide/cookie-manager/faq/">FAQ and glossary</a></li></ol></details>
+
+<p>Open <span class="ui">Booth Schedule &amp; Operations</span> from the dashboard. As a manager you operate <strong>troop booths</strong>. Families run their own <a href="/guide/cookie-manager/personal-booths/">personal booths</a>.</p>
+
+<h2>Schedule a troop booth</h2>
+<ol class="steps">
+  <li>Tap <span class="ui">Schedule First Booth Slot</span> (once you have booths, use the add button on the booth list).</li>
+  <li>Booth Type: choose <span class="ui">Troop Booth</span>.</li>
+  <li>Pick the <strong>Booth Date</strong> and <strong>Start Time</strong>.</li>
+  <li>Choose the <strong>Shift Duration</strong> in hours and the number of <strong>Scouts per Booth</strong>. That number is a firm limit for everyone, managers included.</li>
+  <li>Enter the <strong>Location Name</strong> (e.g. <em>Walmart North</em>) and the street address. Address and notes help families find it.</li>
+  <li>Optional: set sign-up window overrides (below), then save.</li>
+</ol>
+<p>Tap a booth later to edit it. If you've already got a list, use import.</p>
+
+<h3>Import many booths at once</h3>
+<p>The booth import is on the booth list screen. Download the CSV template, fill it in a spreadsheet (date, start time, location, and either an end time or a duration are required), and pick the file. Every row is checked and previewed first, duplicates are skipped, and rows with errors are listed so the good ones can still be imported.</p>
+
+<h3>Sign-up window overrides</h3>
+<p>By default a booth follows the troop-wide <a href="/guide/cookie-manager/settings/">round rules</a>. In the booth form you can override that for one booth:</p>
+<ul>
+  <li><strong>Sign-Ups Open / Close Date/Time:</strong> give this booth its own window. A booth with its own open date doesn't count toward the round limit.</li>
+  <li><strong>Default (Date Driven), Force Open, Force Closed:</strong> follow the dates, open it right now, or lock sign-ups.</li>
+</ul>
+
+<h2>Assign scouts to shifts</h2>
+<p>Each shift shows who's working it and how many spots remain. Tap <span class="ui">Assign Scout</span> on a shift and search for the scout by name. If a scout is over the round limit you're warned and can choose <span class="ui">Assign Anyway</span>. You can remove a worker at any time.</p>
+<p>Families sign up on their own phones. The list updates live as other families sign up, and the database stops two families taking the last spot: the second sees <em>Spot Just Taken</em>.</p>
+<p>The booth list has filters for <span class="ui">Upcoming</span> (the default), <span class="ui">Past</span> and <span class="ui">All</span>, plus <span class="ui">Open spots</span> to find shifts that still need people. Each booth card has <strong>Add to Calendar</strong> and <strong>Directions</strong> buttons for families and for you.</p>
+
+<h2>Run a booth: reconcile and finish</h2>
+<p>Open the booth. The steps, in order:</p>
+<ol class="steps">
+  <li><strong>Check out cookies.</strong> Tap <span class="ui">Check Out Cookies</span> and enter boxes and cases per variety. This is a transfer from the cupboard to the booth, signed if your settings require it.</li>
+  <li><strong>Track sales (optional).</strong> <span class="ui">Open Sales Tracker</span>: tap cookies to build an order, then tap Cash or Digital. There's an 8-second undo, any order can be voided later, and several phones can ring up sales at once, even offline. The tracker is a check on stock, not a replacement. If the tally and stock disagree, the booth screen flags each variety, and <span class="ui">Use Tally for Cash Register</span> fills in the cash, digital, and donation fields.</li>
+  <li><strong>Return unsold.</strong> Tap <span class="ui">Return Unsold</span> and enter what came back. Boxes sold = checked out &minus; returned.</li>
+  <li><strong>Record donations.</strong> Donation boxes customers paid for (Hometown Heroes or Gift of Caring). Nothing leaves the booth. If the cash is over, the app suggests recording the overage as Gift of Caring.</li>
+  <li><strong>Count the cash.</strong> Enter <em>Starting Cash Float</em>, <em>Cash Collected</em>, and <em>Digital / Credit Card</em>. The screen compares expected sales revenue with the payments you logged and shows the <strong>Cash Variance</strong>. Tap <span class="ui">Save Cash Register Logs</span>.</li>
+  <li><strong>Assign credits.</strong> <span class="ui">Assign Credits by Variety</span> gives shift workers whole-box credit for sales (these are what count for reward totals). Credits can be split equally, or by variety.</li>
+  <li><strong>Finish.</strong> Tap <span class="ui">Finish Booth</span>. Anything not returned counts as sold. <span class="ui">Reopen Booth</span> undoes it.</li>
+</ol>
+<div class="tip"><strong>Booth money is settled at the booth.</strong> Scouts on a shift get <em>box credits</em> only. The app doesn't split dollars or make a scout owe booth proceeds.</div>
+
+<h3>If you let families start reconciliation</h3>
+<p>With <span class="ui">Families Can Start Reconciliation</span> turned on in Settings, the family of a scout on the shift can check out and return cookies, enter donations, count the cash, and tap <span class="ui">Submit Reconciliation</span>. You then enter the digital total, review the variance, and tap <span class="ui">Finalize Reconciliation</span>. If signatures are on, you countersign once for checkout, return, and cash. Until you finalize, the booth can't be finished. <span class="ui">Reopen Reconciliation</span> undoes it. After finalizing, families can no longer change the booth's stock, cash, or donations.</p>
+
+<h3>Online orders at a booth</h3>
+<p>If you've imported Digital Cookie orders for this booth (see <a href="/guide/cookie-manager/orders/">Orders and Digital Cookie</a>), a <em>Digital Cookie Orders</em> card shows the orders, boxes, card, and cash, with a button to use the card total as the booth's digital amount.</p>
+
+<h2>Booths that need wrapping up</h2>
+<p>A booth that's over but not finished gets flagged: a count on the dashboard, a banner and filter on the booth list, and a flag on the booth itself. Managers see troop and family booths separately. Finish or reopen them to clear the flag.</p>
+
+      <div class="pager"><a href="/guide/cookie-manager/settings/">&larr; Settings and what they mean</a><a href="/guide/cookie-manager/personal-booths/">Personal booth requests &rarr;</a></div>
+    </div>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      &copy; 2026 Lanternwise Labs &middot; <a href="mailto:support@lanternwise.app">support@lanternwise.app</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/delete-account/">Delete account</a>
+    </div>
+  </footer>
+</body>
+</html>

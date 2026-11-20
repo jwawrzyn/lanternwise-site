@@ -156,3 +156,59 @@ footer.site {
 }
 
 footer.site a { color: var(--muted); }
+
+/* Guide pages */
+.guide-nav {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin: 8px 0 28px;
+  font-size: 15px;
+}
+.guide-nav summary { cursor: pointer; font-weight: 600; color: var(--ink); }
+.guide-nav ol { margin: 10px 0 0; padding-left: 22px; }
+.guide-nav li { margin: 4px 0; }
+.guide-nav a[aria-current="page"] { color: var(--ink); font-weight: 700; text-decoration: none; }
+
+.crumbs { font-size: 14px; color: var(--muted); margin: 0 0 8px; }
+.crumbs a { color: var(--muted); }
+
+.steps { padding-left: 22px; }
+.steps li { margin: 8px 0; }
+
+.tip, .warn {
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 20px 0;
+  border-left: 4px solid var(--glow);
+  background: var(--accent-soft);
+}
+.warn { border-left-color: #c0392b; }
+.tip strong:first-child, .warn strong:first-child { color: var(--ink); }
+
+.pager {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 15px;
+}
+
+.guide-list { list-style: none; padding: 0; margin: 16px 0; display: grid; gap: 12px; }
+.guide-list li { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px 18px; }
+.guide-list a { font-weight: 700; }
+.guide-list span { display: block; color: var(--muted); font-size: 15px; }
+
+kbd, .ui {
+  font-family: inherit;
+  font-weight: 600;
+  background: var(--accent-soft);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0 5px;
+  font-size: 0.92em;
+  white-space: nowrap;
+}
